@@ -1,27 +1,24 @@
 package com.s14d3.pacific;
 
-import com.s14d3.pacific.Car;
-
 public class Holden extends Car {
     public Holden(int cylinders, String name) {
         super(cylinders, name);
     }
+
     @Override
-    public String startEngine(){
+    public String startEngine() {
         System.out.println(getClass().getSimpleName());
         return super.getName() + "'s engine is starting.";
     }
 
-
     @Override
-    public  String accelerate(){
+    public String accelerate() {
         System.out.println(getClass().getSimpleName());
-        return super.getName() +" is accelerating";
+        return super.getName() + " is accelerating";
     }
 
-
     @Override
-    public String carBreak(){
+    public String carBreak() {
         System.out.println(getClass().getSimpleName());
         return super.getName() + " is breaking.";
     }
